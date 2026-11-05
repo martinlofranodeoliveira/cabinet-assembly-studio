@@ -69,6 +69,15 @@ export class Library {
     nameOf(name);
     this.commit(this.items.map(v => v.id === id ? { id, document: concept(name, v.document.parameters) } : v));
   }
+  update(id: number, c: Concept): void {
+    const item = this.items.find(v => v.id === id);
+    if (!item) throw new Fault(['chooseSave']);
+    this.commit(this.items.map(v => v.id === id ? { id, document: concept(item.document.name, c.parameters) } : v));
+  }
+  remove(id: number): void {
+    if (!this.items.some(v => v.id === id)) throw new Fault(['chooseSave']);
+    this.commit(this.items.filter(v => v.id !== id));
+  }
   load(id: number): Concept {
     const item = this.items.find(v => v.id === id);
     if (!item) throw new Fault(['chooseSave']);

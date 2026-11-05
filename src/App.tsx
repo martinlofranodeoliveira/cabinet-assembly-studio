@@ -57,8 +57,10 @@ export function App({ storage, webgl, onExport = download }: { storage?: Storage
   const [entries, setEntries] = useState(library.entries);
   const [saveName, setSaveName] = useState('Gabinete 01');
   const [saveID, setSaveID] = useState(0);
+  const [removeID, setRemoveID] = useState(0);
+  const removeButton = useRef<HTMLButtonElement>(null);
   const [error, setError] = useState<unknown>(null);
-  const [status, setStatus] = useState<'ready' | 'applied' | 'imported' | 'saved' | 'renamed' | 'loaded' | 'exported' | 'history' | 'storageRead'>('ready');
+  const [status, setStatus] = useState<'ready' | 'applied' | 'imported' | 'saved' | 'renamed' | 'loaded' | 'exported' | 'history' | 'storageRead' | 'updated' | 'removed'>('ready');
   const input = useRef<HTMLInputElement>(null);
   const importGeneration = useRef(0);
   useEffect(() => { document.documentElement.lang = locale; }, [locale]);
@@ -69,6 +71,7 @@ export function App({ storage, webgl, onExport = download }: { storage?: Storage
   }, [library]);
   function action(nextStatus: typeof status, fn: () => void) {
     if (nextStatus === 'applied' || nextStatus === 'history' || nextStatus === 'loaded') importGeneration.current++;
+    if (['saved', 'updated', 'renamed', 'loaded', 'storageRead'].includes(nextStatus)) setRemoveID(0);
     try { fn(); setError(null); setStatus(nextStatus); } catch (e) { setError(e); }
   }
   async function importFile(file: File | undefined) {
@@ -116,9 +119,17 @@ export function App({ storage, webgl, onExport = download }: { storage?: Storage
         <section className="local-library" aria-label={t.local}>
           <h2>{t.local}</h2>
           <label>{t.saveName}<input maxLength={64} value={saveName} onChange={e => setSaveName(e.target.value)} /></label>
-          <button onClick={() => action('saved', () => { const id = library.save(current, saveName); setEntries(library.entries); setSaveID(id); })}><Save aria-hidden="true" />{t.save}</button>
-          <label>{t.savedChoice}<select value={saveID} onChange={e => setSaveID(Number(e.target.value))}><option value={0}>{entries.length ? t.choose : t.empty}</option>{entries.map(v => <option key={v.id} value={v.id}>{v.document.name}</option>)}</select></label>
+          <p>{t.storageHelp}</p>
+          <output aria-label={t.savedCount}>{entries.length}/10</output>
+          <button disabled={entries.length >= 10} onClick={() => action('saved', () => { const id = library.save(current, saveName); setEntries(library.entries); setSaveID(id); })}><Save aria-hidden="true" />{t.save}</button>
+          <label>{t.savedChoice}<select value={saveID} onChange={e => { setSaveID(Number(e.target.value)); setRemoveID(0); }}><option value={0}>{entries.length ? t.choose : t.empty}</option>{entries.map(v => <option key={v.id} value={v.id}>{v.document.name}</option>)}</select></label>
           <div className="button-row"><button onClick={() => action('loaded', () => { const c = library.load(saveID); setSession(s => replace(s, c)); })}>{t.load}</button><button onClick={() => action('renamed', () => { library.rename(saveID, saveName); setEntries(library.entries); })}>{t.rename}</button></div>
+          <div className="button-row"><button disabled={!saveID} onClick={() => action('updated', () => { library.update(saveID, current); setEntries(library.entries); })}>{t.updateSaved}</button><button ref={removeButton} disabled={!saveID} onClick={() => setRemoveID(saveID)}>{t.removeSaved}</button></div>
+          {removeID !== 0 && entries.some(v => v.id === removeID) && <section aria-label={t.confirmRemove}>
+            <p>{t.removeQuestion} <strong>{entries.find(v => v.id === removeID)!.document.name}</strong>?</p>
+            <button onClick={() => action('removed', () => { library.remove(removeID); setEntries(library.entries); setSaveID(0); setRemoveID(0); })}>{t.confirmRemove}</button>
+            <button onClick={() => { setRemoveID(0); removeButton.current?.focus(); }}>{t.cancelRemove}</button>
+          </section>}
           <button onClick={() => action('storageRead', () => { library.read(); const next = library.entries; setEntries(next); setSaveID(id => next.some(v => v.id === id) ? id : 0); })}>{t.retryStorage}</button>
         </section>
       </aside>

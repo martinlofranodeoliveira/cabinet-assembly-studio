@@ -88,6 +88,43 @@ window.__cabinetDone=(async()=>{
   check(view.getByRole('button',{name:'Fit'}).hasAttribute('disabled'),'camera fit disabled without a scene');
   cleanup();
 
+  // Local-library management remains distinct from adding a new copy, in both locales.
+  for (const locale of ['pt-BR','en'] as const) {
+    const memory = new Memory();
+    const libraryView=render(<App storage={memory} webgl={false}/>);
+    const en=locale==='en';
+    if(en)fireEvent.change(libraryView.getByLabelText('Idioma'),{target:{value:'en'}});
+    const button=(pt:string,english:string)=>libraryView.getByRole('button',{name:en?english:pt});
+    const count=()=>libraryView.getByLabelText(en?'Saved concepts':'Conceitos salvos').textContent;
+    const width=libraryView.getByLabelText(en?'Width W':'Largura W');
+    const name=libraryView.getByLabelText(en?'Name for saving or renaming':'Nome para salvar ou renomear');
+    check(count()==='0/10','saved capacity visible');
+    for(let i=0;i<10;i++){
+      fireEvent.change(name,{target:{value:`Copy ${i}`}});
+      await user.click(button('Salvar cópia','Save copy'));
+    }
+    check(count()==='10/10'&&button('Salvar cópia','Save copy').hasAttribute('disabled'),'full library cannot add an eleventh copy');
+    fireEvent.change(width,{target:{value:'720'}});
+    await user.click(button('Aplicar dimensões','Apply dimensions'));
+    await user.click(button('Atualizar selecionado','Update selected'));
+    const saved=JSON.parse(memory.value!).entries as {id:number;document:{name:string;parameters:{W:number}}}[];
+    check(saved.length===10&&saved[9]!.document.name==='Copy 9'&&saved[9]!.document.parameters.W===720,'update replaces selected dimensions and preserves saved name');
+    check(saved[0]!.document.parameters.W===600,'update does not overwrite another copy');
+    await user.click(button('Remover salvo','Remove saved'));
+    check(count()==='10/10','remove requires confirmation');
+    await user.click(button('Cancelar remoção','Cancel removal'));
+    check(count()==='10/10'&&!libraryView.queryByRole('button',{name:en?'Confirm removal':'Confirmar remoção'}),'cancel keeps all copies');
+    check(document.activeElement===button('Remover salvo','Remove saved'),'cancel returns focus');
+    await user.click(button('Remover salvo','Remove saved'));
+    await user.click(button('Confirmar remoção','Confirm removal'));
+    check(count()==='9/10'&&!button('Salvar cópia','Save copy').hasAttribute('disabled'),'removal frees one slot');
+    check(libraryView.getByTestId('clear').textContent==='684 / 764 / 382 mm','removal preserves the working concept');
+    check(button('Atualizar selecionado','Update selected').hasAttribute('disabled'),'removed selection cannot be updated');
+    await user.click(button('Salvar cópia','Save copy'));
+    check(count()==='10/10','Save copy still creates an additional entry');
+    cleanup();
+  }
+
   // A positive file-read barrier exposes stale completion ordering without sleeps.
   for (const locale of ['pt-BR','en'] as const) {
     const delayedView=render(<App storage={new Memory()} webgl={false}/>);

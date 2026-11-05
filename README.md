@@ -42,7 +42,7 @@ The interface starts in Portuguese. Choose **English** in **Idioma** to switch a
 3. Enter `W=36`, `t=18` to see a cross-field error as well as the range diagnostic. Undo/redo retain up to 20 accepted edits.
 4. Move the explosion slider. It translates panels without changing nominal measurements or exports. Front, isometric and Fit are explicit camera commands.
 5. Camera navigation starts **off**. Enter **Navigate in 3D** to orbit/zoom; exit with its button or Escape. Controls are disconnected on exit and the actual canvas touch action is restored to `pan-y`.
-6. Save an explicit named copy locally, select it, rename it or load it. Up to 10 concepts are stored in this browser. Storage failure does not prevent editing or exporting.
+6. **Save copy** creates a new named concept locally. The counter shows the ten-concept limit. Select a saved concept to load or rename it, or use **Update selected** to replace its dimensions with the currently applied dimensions while keeping its saved name. **Remove saved** asks for confirmation and deletes only that saved copy; the open work stays intact. Removing a copy frees a slot. Unapplied dimension drafts are never saved. Storage failure does not prevent editing or exporting.
 7. Import a bounded schema-1 JSON file or export deterministic JSON/SVG. SVG is a labelled nominal panel layout, **not a nesting/cutting plan**.
 
 Without WebGL2, after context loss, or on a scene error, the precise projections and all DOM operations remain available. Use Retry 3D to attempt a new context. On mobile, Object, Properties and 2D plan buttons select the control section below the viewport. Measurements are not tiny canvas labels.

@@ -162,3 +162,26 @@ test('SVG escapes all XML metacharacters and only uses passive, nominal elements
   assert.equal(/<script|foreignObject|href=|onload=|https?:/i.test(svg.replace('http://www.w3.org/2000/svg','')),false);
   assert.equal(exportSVG(c),svg);
 });
+
+
+test('saved concepts can be updated and removed at capacity without replacing Save copy', () => {
+  const mem = new Memory(), lib = new Library(mem), working = concept('Working', {...defaults,W:720});
+  for(let i=0;i<10;i++) lib.save(concept('Original',defaults),`Saved ${i}`);
+  lib.update(1,working);
+  assert.equal(lib.entries.length,10);
+  assert.equal(lib.load(1).name,'Saved 0');
+  assert.equal(lib.load(1).parameters.W,720);
+  assert.equal(lib.load(2).parameters.W,600);
+  const before=mem.value, entries=lib.entries;
+  mem.fail=true;
+  assert.throws(()=>lib.update(1,concept('Other',{...defaults,W:800})),hasIssue('storage'));
+  assert.throws(()=>lib.remove(1),hasIssue('storage'));
+  assert.deepEqual(lib.entries,entries);assert.equal(mem.value,before);
+  mem.fail=false;
+  assert.throws(()=>lib.update(0,working),hasIssue('chooseSave'));
+  assert.throws(()=>lib.remove(0),hasIssue('chooseSave'));
+  lib.remove(1);assert.equal(lib.entries.length,9);
+  const id=lib.save(working,'Fresh copy');assert.equal(id,1);assert.equal(lib.entries.length,10);
+  const reload=new Library(mem);reload.read();assert.equal(reload.load(id).name,'Fresh copy');
+  assert.equal(working.name,'Working');assert.equal(working.parameters.W,720);
+});

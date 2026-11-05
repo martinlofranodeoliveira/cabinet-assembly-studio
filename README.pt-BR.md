@@ -42,7 +42,7 @@ A interface inicia em PT-BR. O seletor **Idioma** oferece inglês completo, incl
 3. Experimente `W=36`, `t=18`: o erro entre campos aparece mesmo havendo erro de faixa. Desfazer/refazer conserva até 20 edições aceitas.
 4. Explore a explosão: ela apenas desloca os painéis. Frente, Isométrica e Enquadrar atualizam a câmera real.
 5. Navegação de câmera começa **desligada**. Ative **Navegar em 3D** para orbitar/aproximar; saia pelo botão ou Escape. Ao sair, controles e listeners são removidos e o canvas volta a `touchAction: pan-y`.
-6. Salve uma cópia com nome explícito, selecione-a e use renomear/carregar. O limite é 10 conceitos locais. Falhas de armazenamento não bloqueiam edição ou exportação.
+6. **Salvar cópia** cria um novo conceito com nome explícito. A contagem mostra o limite de 10. Selecione um salvo para carregar ou renomear; **Atualizar selecionado** substitui suas dimensões pelas dimensões aplicadas e mantém o nome salvo. **Remover salvo** pede confirmação e remove só a cópia salva, sem alterar o trabalho aberto; isso libera uma vaga. Rascunhos de dimensões não aplicados nunca são gravados. Falhas de armazenamento não bloqueiam edição ou exportação.
 7. Importe JSON limitado do esquema 1 ou exporte JSON/SVG determinísticos. O SVG apresenta faces nominais rotuladas: **não é plano de corte ou aproveitamento**.
 
 Sem WebGL2, após perda de contexto ou erro da cena, projeções e operações DOM continuam disponíveis. O botão Tentar 3D novamente solicita nova tentativa. No celular, Objeto, Propriedades e Plano 2D selecionam os controles abaixo do viewport, sem reduzir medidas a rótulos minúsculos.
