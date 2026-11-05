@@ -1,7 +1,7 @@
 {
   "project": "cabinet-assembly-studio",
-  "source_commit": "a260673f0c46b9ed46a197d203b8692b21afb12d",
-  "source_inventory_sha256": "6b90b40ab18c3d3eed2c8f87c89ebfac1b499ec1906e4ab9601a499154ca38bb",
+  "source_commit": "f7ce91fbe30d776c92e5cc7b7b69f7d497b235d1",
+  "source_inventory_sha256": "51de22013ef6e4aae6a9f2da0108d46889ffec2b8e6d52948c8e903939481fc1",
   "assets": [
     {
       "path": "THIRD_PARTY_NOTICES.txt",
@@ -9,14 +9,14 @@
       "sha256": "aa7c1024676cebbe98ba331f4571d17a48f3c1121316c26fa2f9e54e06fcf565"
     },
     {
-      "path": "assets/index-BKMGlUvf.js",
-      "bytes": 1187173,
-      "sha256": "381bc148c2b8600b5896baeec66152d8ea39538e626e550b4061c87fa75e0be2"
-    },
-    {
       "path": "assets/index-DROvb4c1.css",
       "bytes": 9081,
       "sha256": "d1b51b1c83f0650104009e7375c893b42a708a0829a94a9d95c25854ba6f0656"
+    },
+    {
+      "path": "assets/index-DjmDI8ev.js",
+      "bytes": 1189412,
+      "sha256": "858b8f0f5fe500d1976973246792299ea96ba80b73f9dac96a2604e15ed080f4"
     },
     {
       "path": "assets/public-sans-latin-ext-wght-normal-MQgHevqp.woff2",
@@ -36,7 +36,7 @@
     {
       "path": "index.html",
       "bytes": 1320,
-      "sha256": "0961d39f998c6178c88d861b9dd9fafd1b97b65f7ce37f422be895729766239a"
+      "sha256": "890ce7bae0a68f7643ec2cd347371acbeee50f63bff6c336216d74154d772b59"
     },
     {
       "path": "licenses/@fontsource-variable-public-sans.txt",
@@ -56,7 +56,7 @@
     {
       "path": "licenses/bundled-packages.json",
       "bytes": 12251,
-      "sha256": "617e116d88cedf847a4a71b5e0f1122f79d601150d76a4614555b6f9ee9388ce"
+      "sha256": "1aae12046ef5260d286d3b19b5003dc9292704cc7c705c2e0c25f21911296c94"
     },
     {
       "path": "licenses/lucide-react.txt",

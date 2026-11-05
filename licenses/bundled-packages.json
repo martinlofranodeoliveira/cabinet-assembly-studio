@@ -20,7 +20,7 @@
         "helpers/esm/extends.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -41,7 +41,7 @@
         "wght.css"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -63,7 +63,7 @@
         "core/shapes.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -84,7 +84,7 @@
         "dist/react-three-fiber.esm.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -101,7 +101,7 @@
         "dist/index.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -140,7 +140,7 @@
         "dist/esm/shared/src/utils/toPascalCase.mjs"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -164,7 +164,7 @@
         "jsx-runtime.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -188,7 +188,7 @@
         "index.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -205,7 +205,7 @@
         "dist/index.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -227,7 +227,7 @@
         "index.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -244,7 +244,7 @@
         "index.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -265,7 +265,7 @@
         "build/three.module.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -290,7 +290,7 @@
         "lines/LineSegmentsGeometry.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -314,7 +314,7 @@
         "shim/with-selector.js"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     },
     {
@@ -335,7 +335,7 @@
         "esm/vanilla.mjs"
       ],
       "chunks": [
-        "assets/index-BKMGlUvf.js"
+        "assets/index-DjmDI8ev.js"
       ]
     }
   ]
