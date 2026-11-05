@@ -1,0 +1,88 @@
+{
+  "project": "cabinet-assembly-studio",
+  "source_commit": "a260673f0c46b9ed46a197d203b8692b21afb12d",
+  "source_inventory_sha256": "6b90b40ab18c3d3eed2c8f87c89ebfac1b499ec1906e4ab9601a499154ca38bb",
+  "assets": [
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 26274,
+      "sha256": "aa7c1024676cebbe98ba331f4571d17a48f3c1121316c26fa2f9e54e06fcf565"
+    },
+    {
+      "path": "assets/index-BKMGlUvf.js",
+      "bytes": 1187173,
+      "sha256": "381bc148c2b8600b5896baeec66152d8ea39538e626e550b4061c87fa75e0be2"
+    },
+    {
+      "path": "assets/index-DROvb4c1.css",
+      "bytes": 9081,
+      "sha256": "d1b51b1c83f0650104009e7375c893b42a708a0829a94a9d95c25854ba6f0656"
+    },
+    {
+      "path": "assets/public-sans-latin-ext-wght-normal-MQgHevqp.woff2",
+      "bytes": 18472,
+      "sha256": "3a00a32f0242b723dcea79935747d6d27dd93675d03ef23f470dfe274e79586a"
+    },
+    {
+      "path": "assets/public-sans-latin-wght-normal-DdeTHZLK.woff2",
+      "bytes": 26832,
+      "sha256": "5ed4d31c988e73b258894244f209069ebe77dc7e564861954b21198b6de90d68"
+    },
+    {
+      "path": "assets/public-sans-vietnamese-wght-normal-CtlIRbEm.woff2",
+      "bytes": 7716,
+      "sha256": "94593e69fad0885b2b0b74cd18d036c7e9cd6051b2256ab281a20f5bc9ccb46f"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1320,
+      "sha256": "0961d39f998c6178c88d861b9dd9fafd1b97b65f7ce37f422be895729766239a"
+    },
+    {
+      "path": "licenses/@fontsource-variable-public-sans.txt",
+      "bytes": 4503,
+      "sha256": "705a497c781f6463ff819abb513bb495f3fb05256f1d20321e3275813c0bafa5"
+    },
+    {
+      "path": "licenses/@react-three-drei.txt",
+      "bytes": 1069,
+      "sha256": "2e36b208b403882158daf95cae207087bbb830db4d434a79ebafffca177244c8"
+    },
+    {
+      "path": "licenses/@react-three-fiber.txt",
+      "bytes": 1072,
+      "sha256": "9c35b5de7b7493a707fffe4eb23bd2f7f449153c1911f7c6eefb4e591fd5349a"
+    },
+    {
+      "path": "licenses/bundled-packages.json",
+      "bytes": 12251,
+      "sha256": "617e116d88cedf847a4a71b5e0f1122f79d601150d76a4614555b6f9ee9388ce"
+    },
+    {
+      "path": "licenses/lucide-react.txt",
+      "bytes": 3208,
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "path": "licenses/react-dom.txt",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/react.txt",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/three-stdlib.txt",
+      "bytes": 1072,
+      "sha256": "28eb7edf059a39094aa3d169db1fec46ac4a6279c921a90f965828d92ec86e79"
+    },
+    {
+      "path": "licenses/three.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    }
+  ],
+  "verification": "Offline technical gates passed; browser/WebGL visual QA remains pending."
+}
