@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-05T12:11:00.933631+00:00",
+  "title": "Design System: Cabinet Assembly Studio",
+  "extensions": {
+    "colorMeta": {
+      "active": {
+        "role": "primary",
+        "displayName": "Azul ativo / Active blue",
+        "tonalRamp": [
+          "oklch(15% 0.19568 262.79)",
+          "oklch(26.43% 0.19568 262.79)",
+          "oklch(37.86% 0.19568 262.79)",
+          "oklch(49.29% 0.19568 262.79)",
+          "oklch(60.71% 0.19568 262.79)",
+          "oklch(72.14% 0.19568 262.79)",
+          "oklch(83.57% 0.19568 262.79)",
+          "oklch(95% 0.19568 262.79)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Bancada / Desk ground",
+        "tonalRamp": [
+          "oklch(15% 0.00347 219.53)",
+          "oklch(26.43% 0.00347 219.53)",
+          "oklch(37.86% 0.00347 219.53)",
+          "oklch(49.29% 0.00347 219.53)",
+          "oklch(60.71% 0.00347 219.53)",
+          "oklch(72.14% 0.00347 219.53)",
+          "oklch(83.57% 0.00347 219.53)",
+          "oklch(95% 0.00347 219.53)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Superfície branca / White surface",
+        "tonalRamp": [
+          "oklch(15% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95% 0.00000 0.00)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta principal / Main ink",
+        "tonalRamp": [
+          "oklch(15% 0.02541 248.74)",
+          "oklch(26.43% 0.02541 248.74)",
+          "oklch(37.86% 0.02541 248.74)",
+          "oklch(49.29% 0.02541 248.74)",
+          "oklch(60.71% 0.02541 248.74)",
+          "oklch(72.14% 0.02541 248.74)",
+          "oklch(83.57% 0.02541 248.74)",
+          "oklch(95% 0.02541 248.74)"
+        ]
+      },
+      "subtle": {
+        "role": "neutral",
+        "displayName": "Tinta auxiliar / Supporting ink",
+        "tonalRamp": [
+          "oklch(15% 0.03157 241.72)",
+          "oklch(26.43% 0.03157 241.72)",
+          "oklch(37.86% 0.03157 241.72)",
+          "oklch(49.29% 0.03157 241.72)",
+          "oklch(60.71% 0.03157 241.72)",
+          "oklch(72.14% 0.03157 241.72)",
+          "oklch(83.57% 0.03157 241.72)",
+          "oklch(95% 0.03157 241.72)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Divisória / Divider",
+        "tonalRamp": [
+          "oklch(15% 0.01289 236.65)",
+          "oklch(26.43% 0.01289 236.65)",
+          "oklch(37.86% 0.01289 236.65)",
+          "oklch(49.29% 0.01289 236.65)",
+          "oklch(60.71% 0.01289 236.65)",
+          "oklch(72.14% 0.01289 236.65)",
+          "oklch(83.57% 0.01289 236.65)",
+          "oklch(95% 0.01289 236.65)"
+        ]
+      },
+      "control-border": {
+        "role": "neutral",
+        "displayName": "Borda de controle / Control border",
+        "tonalRamp": [
+          "oklch(15% 0.03548 242.70)",
+          "oklch(26.43% 0.03548 242.70)",
+          "oklch(37.86% 0.03548 242.70)",
+          "oklch(49.29% 0.03548 242.70)",
+          "oklch(60.71% 0.03548 242.70)",
+          "oklch(72.14% 0.03548 242.70)",
+          "oklch(83.57% 0.03548 242.70)",
+          "oklch(95% 0.03548 242.70)"
+        ]
+      },
+      "pressed-ink": {
+        "role": "primary",
+        "displayName": "Tinta pressionada / Pressed ink",
+        "tonalRamp": [
+          "oklch(15% 0.18222 262.71)",
+          "oklch(26.43% 0.18222 262.71)",
+          "oklch(37.86% 0.18222 262.71)",
+          "oklch(49.29% 0.18222 262.71)",
+          "oklch(60.71% 0.18222 262.71)",
+          "oklch(72.14% 0.18222 262.71)",
+          "oklch(83.57% 0.18222 262.71)",
+          "oklch(95% 0.18222 262.71)"
+        ]
+      },
+      "pressed-surface": {
+        "role": "primary",
+        "displayName": "Fundo pressionado / Pressed ground",
+        "tonalRamp": [
+          "oklch(15% 0.02159 265.76)",
+          "oklch(26.43% 0.02159 265.76)",
+          "oklch(37.86% 0.02159 265.76)",
+          "oklch(49.29% 0.02159 265.76)",
+          "oklch(60.71% 0.02159 265.76)",
+          "oklch(72.14% 0.02159 265.76)",
+          "oklch(83.57% 0.02159 265.76)",
+          "oklch(95% 0.02159 265.76)"
+        ]
+      },
+      "stage": {
+        "role": "neutral",
+        "displayName": "Palco / Stage",
+        "tonalRamp": [
+          "oklch(15% 0.00697 219.56)",
+          "oklch(26.43% 0.00697 219.56)",
+          "oklch(37.86% 0.00697 219.56)",
+          "oklch(49.29% 0.00697 219.56)",
+          "oklch(60.71% 0.00697 219.56)",
+          "oklch(72.14% 0.00697 219.56)",
+          "oklch(83.57% 0.00697 219.56)",
+          "oklch(95% 0.00697 219.56)"
+        ]
+      },
+      "projection-ground": {
+        "role": "neutral",
+        "displayName": "Fundo de projeção / Projection ground",
+        "tonalRamp": [
+          "oklch(15% 0.00252 228.78)",
+          "oklch(26.43% 0.00252 228.78)",
+          "oklch(37.86% 0.00252 228.78)",
+          "oklch(49.29% 0.00252 228.78)",
+          "oklch(60.71% 0.00252 228.78)",
+          "oklch(72.14% 0.00252 228.78)",
+          "oklch(83.57% 0.00252 228.78)",
+          "oklch(95% 0.00252 228.78)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Painel neutro / Neutral panel",
+        "tonalRamp": [
+          "oklch(15% 0.00764 207.14)",
+          "oklch(26.43% 0.00764 207.14)",
+          "oklch(37.86% 0.00764 207.14)",
+          "oklch(49.29% 0.00764 207.14)",
+          "oklch(60.71% 0.00764 207.14)",
+          "oklch(72.14% 0.00764 207.14)",
+          "oklch(83.57% 0.00764 207.14)",
+          "oklch(95% 0.00764 207.14)"
+        ]
+      },
+      "panel-selected": {
+        "role": "primary",
+        "displayName": "Painel selecionado / Selected panel",
+        "tonalRamp": [
+          "oklch(15% 0.05757 263.24)",
+          "oklch(26.43% 0.05757 263.24)",
+          "oklch(37.86% 0.05757 263.24)",
+          "oklch(49.29% 0.05757 263.24)",
+          "oklch(60.71% 0.05757 263.24)",
+          "oklch(72.14% 0.05757 263.24)",
+          "oklch(83.57% 0.05757 263.24)",
+          "oklch(95% 0.05757 263.24)"
+        ]
+      },
+      "panel-edge": {
+        "role": "neutral",
+        "displayName": "Aresta / Panel edge",
+        "tonalRamp": [
+          "oklch(15% 0.02886 246.55)",
+          "oklch(26.43% 0.02886 246.55)",
+          "oklch(37.86% 0.02886 246.55)",
+          "oklch(49.29% 0.02886 246.55)",
+          "oklch(60.71% 0.02886 246.55)",
+          "oklch(72.14% 0.02886 246.55)",
+          "oklch(83.57% 0.02886 246.55)",
+          "oklch(95% 0.02886 246.55)"
+        ]
+      },
+      "projection-panel": {
+        "role": "neutral",
+        "displayName": "Painel projetado / Projected panel",
+        "tonalRamp": [
+          "oklch(15% 0.01113 225.99)",
+          "oklch(26.43% 0.01113 225.99)",
+          "oklch(37.86% 0.01113 225.99)",
+          "oklch(49.29% 0.01113 225.99)",
+          "oklch(60.71% 0.01113 225.99)",
+          "oklch(72.14% 0.01113 225.99)",
+          "oklch(83.57% 0.01113 225.99)",
+          "oklch(95% 0.01113 225.99)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "title": {
+        "displayName": "Título / Title",
+        "purpose": "Título do produto. / Product title."
+      },
+      "section": {
+        "displayName": "Seção / Section",
+        "purpose": "Cabeçalhos de grupos e painéis. / Group and panel headings."
+      },
+      "body": {
+        "displayName": "Corpo / Body",
+        "purpose": "Texto-base e campos; sem entrelinha global declarada. / Base text and fields; no global line height declared."
+      },
+      "label": {
+        "displayName": "Rótulo / Label",
+        "purpose": "Formulário, biblioteca, idioma e explosão. / Form, library, locale and explosion."
+      },
+      "support": {
+        "displayName": "Apoio / Support",
+        "purpose": "Limites, ajuda e informações auxiliares. / Limits, help and supporting information."
+      },
+      "context": {
+        "displayName": "Contexto / Context",
+        "purpose": "Contexto do palco e legenda. / Stage context and caption."
+      }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [
+      {
+        "name": "mobile-sections-max",
+        "value": "760px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1050px"
+      },
+      {
+        "name": "wide-desktop-min",
+        "value": "1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão neutro / Neutral button",
+      "kind": "button",
+      "refersTo": "button-neutral",
+      "description": "Ação auxiliar da biblioteca local. / Supporting local-library action.",
+      "html": "<button type=\"button\" class=\"ds-button-neutral\" lang=\"pt-BR\">Carregar salvo</button>",
+      "css": ".ds-button-neutral{font-family:'Public Sans Variable','Public Sans',sans-serif;font-size:14px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:7px;background:#fff;color:#202b36;border:1px solid #728798;border-radius:4px;padding:8px 11px;cursor:pointer;}.ds-button-neutral:hover{border-color:#728798;background:#edf2f6}.ds-button-neutral[aria-pressed=true]{color:#1649b7;border-color:var(--active,#235bd4);background:#e6edfc}.ds-button-neutral:disabled{opacity:.55;cursor:default}.ds-button-neutral:focus-visible{outline:3px solid var(--active,#235bd4);outline-offset:3px}"
+    },
+    {
+      "name": "Aplicar dimensões / Apply dimensions",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação primária do formulário dimensional. / Primary dimension-form action.",
+      "html": "<button type=\"button\" class=\"ds-button-primary\" lang=\"pt-BR\">Aplicar dimensões</button>",
+      "css": ".ds-button-primary{font-family:'Public Sans Variable','Public Sans',sans-serif;font-size:14px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:7px;background:#fff;color:#202b36;border:1px solid #728798;border-radius:4px;padding:8px 11px;cursor:pointer;}.ds-button-primary:hover{border-color:#728798;background:#edf2f6}.ds-button-primary[aria-pressed=true]{color:#1649b7;border-color:var(--active,#235bd4);background:#e6edfc}.ds-button-primary:disabled{opacity:.55;cursor:default}.ds-button-primary:focus-visible{outline:3px solid var(--active,#235bd4);outline-offset:3px}.ds-button-primary{background:var(--active,#235bd4);color:#fff;border-color:var(--active,#235bd4);width:100%}"
+    },
+    {
+      "name": "Modo pressionado / Pressed mode",
+      "kind": "button",
+      "refersTo": "button-pressed",
+      "description": "Estado selecionado do modo frontal. / Selected front-view mode state.",
+      "html": "<button type=\"button\" class=\"ds-button-pressed\" aria-pressed=\"true\" lang=\"pt-BR\">Frente</button>",
+      "css": ".ds-button-pressed{font-family:'Public Sans Variable','Public Sans',sans-serif;font-size:14px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:7px;background:#fff;color:#202b36;border:1px solid #728798;border-radius:4px;padding:8px 11px;cursor:pointer;}.ds-button-pressed:hover{border-color:#728798;background:#edf2f6}.ds-button-pressed[aria-pressed=true]{color:#1649b7;border-color:var(--active,#235bd4);background:#e6edfc}.ds-button-pressed:disabled{opacity:.55;cursor:default}.ds-button-pressed:focus-visible{outline:3px solid var(--active,#235bd4);outline-offset:3px}"
+    },
+    {
+      "name": "Campo dimensional / Dimension field",
+      "kind": "input",
+      "refersTo": "text-input",
+      "description": "Rascunho inicial da largura, com unidade e limite real. / Initial width draft with actual unit and limit.",
+      "html": "<label class=\"ds-dimension-label\" lang=\"pt-BR\"><span id=\"ds-width-label\">Largura W</span><span class=\"ds-number-wrap\"><input class=\"ds-number-field\" type=\"text\" inputmode=\"numeric\" value=\"600\" aria-labelledby=\"ds-width-label\" aria-describedby=\"ds-width-hint\" /><span>mm</span></span><small id=\"ds-width-hint\">50–3000 mm</small></label>",
+      "css": ".ds-dimension-label{font-family:'Public Sans Variable','Public Sans',sans-serif;font-size:14px;display:flex;flex-direction:column;gap:6px;font-weight:550;font-size:12px;color:#202b36}.ds-number-wrap{display:flex;align-items:center;position:relative}.ds-number-field{font-family:'Public Sans Variable','Public Sans',sans-serif;font-size:14px;min-height:44px;min-width:0;border:1px solid #728798;border-radius:3px;background:#fff;color:#202b36;padding:8px 30px 8px 8px;width:100%;font-variant-numeric:tabular-nums;caret-color:var(--active,#235bd4)}.ds-number-wrap>span{position:absolute;right:8px;font-size:11px;color:var(--subtle,#4e606e)}.ds-dimension-label small{font-size:12px;font-weight:400;color:var(--subtle,#4e606e)}.ds-number-field:focus-visible{outline:3px solid var(--active,#235bd4);outline-offset:1px}"
+    },
+    {
+      "name": "Painel selecionado / Selected part row",
+      "kind": "nav",
+      "refersTo": "part-row-selected",
+      "description": "Lateral esquerda do conceito inicial, com dimensões nominais reais. / Left side of the initial concept with actual nominal dimensions.",
+      "html": "<button type=\"button\" class=\"ds-part-row\" aria-pressed=\"true\" aria-label=\"Lateral esquerda 18 × 800 × 400 mm\" lang=\"pt-BR\"><span>Lateral esquerda</span><small>18 × 800 × 400</small></button>",
+      "css": ".ds-part-row{font-family:'Public Sans Variable','Public Sans',sans-serif;font-size:14px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:7px;background:#fff;color:#202b36;border:1px solid #728798;border-radius:4px;padding:8px 11px;cursor:pointer;}.ds-part-row:hover{border-color:#728798;background:#edf2f6}.ds-part-row[aria-pressed=true]{color:#1649b7;border-color:var(--active,#235bd4);background:#e6edfc}.ds-part-row:disabled{opacity:.55;cursor:default}.ds-part-row:focus-visible{outline:3px solid var(--active,#235bd4);outline-offset:3px}.ds-part-row{width:100%;justify-content:flex-start;align-items:start;flex-direction:column;gap:4px;border-color:transparent;background:transparent;text-align:left}.ds-part-row[aria-pressed=true]{border-color:var(--active,#235bd4);background:#e6edfc}.ds-part-row small{font-size:12px;font-weight:400;color:var(--subtle,#4e606e);font-variant-numeric:tabular-nums}@media(max-width:760px){.ds-part-row{min-height:66px}}"
+    },
+    {
+      "name": "Seções móveis / Mobile sections",
+      "kind": "nav",
+      "description": "Amostra visual dos botões de seção móveis; não executa troca de painéis. / Visual sample of mobile section buttons; it does not execute panel switching.",
+      "html": "<nav class=\"ds-mobile-sections\" aria-label=\"Área de montagem\" lang=\"pt-BR\"><button type=\"button\" class=\"ds-section-button\" aria-pressed=\"true\">Objeto</button><button type=\"button\" class=\"ds-section-button\" aria-pressed=\"false\">Propriedades</button><button type=\"button\" class=\"ds-section-button\" aria-pressed=\"false\">Plano 2D</button></nav>",
+      "css": ".ds-mobile-sections{font-family:'Public Sans Variable','Public Sans',sans-serif;font-size:14px;display:flex;width:100%;padding:10px 16px;border-block:1px solid var(--line,#c9d2d8);gap:8px;background:#fff}.ds-section-button{font-family:'Public Sans Variable','Public Sans',sans-serif;font-size:14px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:7px;background:#fff;color:#202b36;border:1px solid #728798;border-radius:4px;padding:8px 11px;cursor:pointer;flex:1}.ds-section-button:hover{border-color:#728798;background:#edf2f6}.ds-section-button[aria-pressed=true]{color:#1649b7;border-color:var(--active,#235bd4);background:#e6edfc}.ds-section-button:disabled{opacity:.55;cursor:default}.ds-section-button:focus-visible{outline:3px solid var(--active,#235bd4);outline-offset:3px}"
+    },
+    {
+      "name": "Explosão manual / Manual explosion",
+      "kind": "custom",
+      "description": "Slider nativo e saída percentual; amostra do estado inicial. / Native slider and percentage output; initial-state sample.",
+      "html": "<label class=\"ds-explosion\" lang=\"pt-BR\">Explosão da montagem<input class=\"ds-explosion-range\" type=\"range\" min=\"0\" max=\"1\" step=\"0.05\" value=\"0\" /><output>0%</output></label>",
+      "css": ".ds-explosion{font-family:'Public Sans Variable','Public Sans',sans-serif;font-size:14px;display:flex;flex-direction:row;align-items:center;font-weight:550;font-size:12px;gap:8px;flex:1 1 240px;color:#202b36}.ds-explosion-range{font:inherit;min-height:44px;min-width:90px;flex:1;width:100%;padding:0;border:0;background:transparent;accent-color:var(--active,#235bd4)}.ds-explosion output{font-variant-numeric:tabular-nums;width:34px}.ds-explosion-range:focus-visible{outline:3px solid var(--active,#235bd4);outline-offset:1px}@media(max-width:760px){.ds-explosion{flex-basis:100%;font-size:13px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Maquete técnica / Technical maquette",
+    "overview": "**PT-BR.** Uma bancada clara para examinar um gabinete de cinco painéis: geometria contínua, grupos delimitados, medidas e ações locais. “Maquete técnica” é a direção provisória adotada pelo responsável pela implementação sob delegação. React, trabalho por código e aplicações 3D profissionais foram confirmados; essa escolha estética não foi aprovada pelo usuário.\n\n**EN.** A daylight desk for examining a five-panel cabinet: continuous geometry, bounded groups, measurements and local actions. “Technical maquette” is the provisional direction adopted by the implementation owner under delegated authority. React, a code-first workflow and professional 3D applications were confirmed; this visual choice was not approved by the user.\n\n**Evidence / Evidência.** This authorized refresh records actual CSS, React components and scene source. It preserves the earlier finish record's limits: no real desktop/mobile captures, WebGL pixels, gestures, picking, rendered responsiveness, focus traversal, screen-reader output or rendered contrast were observed. Visual review remains pending with `recapture`; this document does not close it. DOM, scene-object, camera-projection and production-output tests do not constitute visual or accessibility approval. / Este registro deriva da fonte e mantém a revisão visual pendente.",
+    "keyCharacteristics": [
+      "Modelo entre hierarquia e inspetor / Model between hierarchy and inspector.",
+      "Superfícies claras e um acento azul / Light surfaces and one blue accent.",
+      "Seleção vinculada e medidas nominais / Linked selection and nominal measurements.",
+      "Explosão manual e operações sem GPU / Manual explosion and operations without a GPU."
+    ],
+    "rules": [
+      {
+        "name": "The Linked Panel Rule",
+        "body": "O mesmo painel selecionado identifica linha, contexto, leituras, material, arestas e projeções. / The same selected panel identifies row, context, readouts, material, edges and projections.",
+        "section": "colors"
+      },
+      {
+        "name": "The Nominal Readout Rule",
+        "body": "Medidas, componentes e leituras usam algarismos tabulares, acompanhados de unidades e nomes. / Measurements, components and readouts use tabular numerals, accompanied by units and names.",
+        "section": "typography"
+      },
+      {
+        "name": "The Assembly Depth Rule",
+        "body": "A profundidade vem da geometria e da separação manual dos mesmos painéis; controles permanecem planos. / Depth comes from geometry and manual separation of the same panels; controls remain flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** manter seleção vinculada e contexto nominal / keep linked selection and nominal context.",
+      "**Do** aplicar rascunhos completos e preservar o último conceito válido / apply complete drafts and preserve the last valid concept.",
+      "**Do** manter biblioteca, medidas e exportações sem GPU / keep library, measurements and exports available without a GPU.",
+      "**Do** conferir PT-BR/EN, foco, zoom, cores forçadas, touch, picking e perda de contexto no browser real / check PT-BR/EN, focus, zoom, forced colours, touch, picking and context loss in a real browser."
+    ],
+    "donts": [
+      "**Don't** apresentar explosão como alteração nominal ou validação de fabricação / present explosion as nominal change or fabrication validation.",
+      "**Don't** tratar clique nas projeções como padrão completo de teclado / treat projection clicks as a complete keyboard pattern.",
+      "**Don't** usar cálculos de cores, testes DOM, objetos de cena ou este documento como aprovação visual ou de acessibilidade / use colour calculations, DOM tests, scene objects or this document as visual or accessibility approval."
+    ]
+  }
+}
